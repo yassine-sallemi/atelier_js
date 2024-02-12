@@ -3,7 +3,8 @@ const contentInput = document.getElementById("content-input");
 const addTodo = document.getElementById("todo-btn");
 const todoList = document.getElementById("todo-list");
 
-addTodo.addEventListener("click", () => {
+addTodo.addEventListener("click", (e) => {
+  e.preventDefault();
   if (nameInput.value.trim() === "" || contentInput.value.trim() === "") {
     alert("Please fill in both fields.");
     return;
