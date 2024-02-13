@@ -21,7 +21,7 @@ addTodo.addEventListener("click", (e) => {
   todoList.insertAdjacentHTML("beforeend", html);
   const deleteBtn = todoList.lastChild.querySelector("button");
   deleteBtn.addEventListener("click", (e) => {
-    e.target.parentElement.parentElement.parentElement.remove();
+    deleteBtn.parentElement.parentElement.remove();
   });
   nameInput.value = "";
   contentInput.value = "";
