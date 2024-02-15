@@ -94,7 +94,6 @@ const startGame = () => {
       endGame();
       return;
     }
-    alert(guessedNumber);
 
     playAgain = confirm("Do you want to play again? 🤔");
   }
