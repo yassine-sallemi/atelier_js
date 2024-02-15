@@ -25,4 +25,5 @@ addTodo.addEventListener("click", (e) => {
   });
   nameInput.value = "";
   contentInput.value = "";
+  document.activeElement.blur();
 });
